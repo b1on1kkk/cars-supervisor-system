@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add delinquence</title>
+
+    <style>
+      .penalty_type {
+        margin: 20px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="licence_filed_wrapper">
+      <div class="main">
+        <input type="text" placeholder="enter licence" />
+        <input type="number" placeholder="change value to..." />
+      </div>
+
+      <div class="penalty_type">
+        <label for="change_delinquency">Change delinquency</label>
+        <input type="radio" name="penalty_type" checked />
+        <label for="change_penalty">Change penalty</label>
+        <input type="radio" name="penalty_type" />
+      </div>
+      <button>Enter</button>
+    </div>
+
+    <script type="module" src="/delinquency/addDelinquency.js"></script>
+  </body>
+</html>

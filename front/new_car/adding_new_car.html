@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>adding car</title>
+    <style>
+      .car_characteristics {
+        display: flex;
+        flex-direction: column;
+        max-width: 200px;
+      }
+
+      .input_button {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="car_characteristics">
+      <label for="car_brand">Brand: </label>
+      <input type="text" placeholder="enter brand" name="car_brand" />
+      <br />
+
+      <label for="car_licence">Licence: </label>
+      <input type="text" placeholder="enter licence" name="car_licence" />
+      <br />
+
+      <label for="car_color">Color: </label>
+      <input type="text" placeholder="enter color" name="car_color" />
+      <br />
+
+      <label for="car_weight">Weight: </label>
+      <input type="number" placeholder="enter weight" name="car_weight" />
+      <br />
+
+      <label for="car_year_release">Year release: </label>
+      <input
+        type="number"
+        placeholder="enter year release"
+        name="car_year_release"
+      />
+      <br />
+
+      <label for="car_engine_type">Engine type: </label>
+      <input
+        type="text"
+        placeholder="enter engine type"
+        name="car_engine_type"
+      />
+      <br />
+
+      <label for="car_delinquencies">Delinquencies: </label>
+      <input type="number" placeholder="enter brand" name="car_delinquencies" />
+      <br />
+
+      <label for="car_penalty">Penalty: </label>
+      <input type="number" placeholder="enter brand" name="car_penalty" />
+
+      <div class="input_button"><button>Add car!</button></div>
+    </div>
+
+    <script type="module" src="/new_car/addingCarToDataBase.js"></script>
+  </body>
+</html>

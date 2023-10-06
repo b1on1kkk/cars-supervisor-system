@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cars by combinations</title>
+
+    <style>
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+      }
+
+      .input_button {
+        margin-top: 20px;
+      }
+
+      .cars-wrapper {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        <label for="car_brand">Brand: </label>
+        <input type="checkbox" name="car_brand" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="car_licence">Licence: </label>
+        <input type="checkbox" name="car_licence" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="car_color">Color: </label>
+        <input type="checkbox" name="car_color" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="car_weight">Weight: </label>
+        <input type="checkbox" name="car_weight" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="car_year_release">Year release: </label>
+        <input type="checkbox" name="car_year_release" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="car_engine_type">Engine type: </label>
+        <input type="checkbox" name="car_engine_type" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="car_delinquencies">Delinquencies: </label>
+        <input type="checkbox" name="car_delinquencies" />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="car_penalty">Penalty: </label>
+        <input type="checkbox" name="car_penalty" />
+      </div>
+    </div>
+
+    <div class="input_button">
+      <button class="show-cars">Show cars</button>
+      <button class="dump-downloader">Get database dump!</button>
+    </div>
+
+    <div class="combinations_wrapper"></div>
+
+    <script
+      type="module"
+      src="/show_by_combination/showByCombination.js"
+    ></script>
+  </body>
+</html>
